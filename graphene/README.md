@@ -1,13 +1,13 @@
 1. Create a lammps script to generate a lammps data file.
-   (main filename: create_lammps_data.py, generated filename: graphene.dat)
+   (main filename: create_lammps_data.py, generated filename: graphene.dat) SLANTED??
    
 3. Convert 'graphene.dat' to POSCAR format using a python script.
-  (main filename: lammps2poscar.py, generated filename: POSCAR)
+  (main filename: lammps2poscar.py, generated filename: POSCAR) 
    
 4. Write "phonopy -c POSCAR" on terminal to create phonon.yaml
    (generated filename: phonon.yaml)
    
-5. Write "phonopy -c POSCAR -d --dim a b c" on terminal to create displaced POSCAR files.
+5. Write phonopy --dim="4 2 1" -d --amplitude=0.01' on terminal to create displaced POSCAR files.
    (generated filenames:POSCAR-001, POSCAR-002, phonopy_disp.yaml)
    
 6. Create python script that converts POSCAR file to lammps data file. Run POSCAR-001 and POSCAR-002 seperately.
