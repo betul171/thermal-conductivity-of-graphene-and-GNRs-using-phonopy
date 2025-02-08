@@ -19,7 +19,7 @@
 8. Write "phonopy -c POSCAR --dim 4 2 1" on terminal to create phonon.yaml
    (generated filename: phonon.yaml)
    
-9. Write 'phonopy --band="0 0 0  0.5 0 0  1/3 1/3 0  0 0 0"' -c phonopy_disp.yaml'on terminal to generate 'band.yaml'
+9. Write 'phonopy --band="0 0 0  0.5 0 0  1/3 1/3 0  0 0 0" -c phonopy_disp.yaml' OR 'phonopy --band="0 0 0  0.5 0 0  1/3 1/3 0  0 0 0" on terminal to generate 'band.yaml'
     (generated filename: band.yaml)
 
 10. An alternative to 9: Create a file named band.conf. Then write "phonopy --band -c phonopy_disp.yaml -d band.conf" on terminal.
