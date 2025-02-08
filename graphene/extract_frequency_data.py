@@ -1,3 +1,4 @@
+# extract frequency data from band.yaml
 import yaml
 
 # Load the band.yaml file
