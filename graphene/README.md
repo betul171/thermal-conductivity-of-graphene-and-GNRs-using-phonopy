@@ -19,7 +19,7 @@
 8. Write 'phonopy --band="0 0 0  0.5 0 0  1/3 1/3 0  0 0 0" -c phonopy_disp.yaml' OR 'phonopy --band="0 0 0  0.5 0 0  1/3 1/3 0  0 0 0"' on terminal to generate 'band.yaml'
     (generated filename: band.yaml, phonon.yml)
 
-9. An alternative to 9: Create a file named band.conf. Then write "phonopy --band -c phonopy_disp.yaml -d band.conf" on terminal.
+9. An alternative to 9: Create a file named band.conf. Then write "phonopy --band -c phonopy_disp.yaml -d band.conf" on terminal. (This item do not work!)
 
 10. Analize the data.
     "phonopy -p band.conf"  --> to see frequency-wavevector graph
