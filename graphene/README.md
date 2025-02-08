@@ -1,4 +1,5 @@
 1. Create a lammps script to generate a lammps data file.
+   
    (main filename: create_lammps_data.py, generated filename: graphene.dat) SLANTED??
    
 3. Convert 'graphene.dat' to POSCAR format using a python script.
