@@ -25,3 +25,5 @@
 10. An alternative to 9: Create a file named band.conf. Then write "phonopy --band -c phonopy_disp.yaml -d band.conf" on terminal.
 
 11. Analize the data.
+    "phonopy -p band.conf"  --> to see frequency-wavevector graph
+
