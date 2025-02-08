@@ -1,3 +1,5 @@
+### The aim of this directory is to calculate phonon frequencies of a graphene piece containing 4 atoms.
+
 1. Create a lammps script to generate a lammps data file.
    
    (main filename: create_lammps_data.py, generated filename: graphene.dat) SLANTED??
@@ -29,6 +31,8 @@
 8. An alternative to 9: Create a file named band.conf. Then write "phonopy --band -c phonopy_disp.yaml -d band.conf" on terminal. (This item do not work!)
 
 9. Analize the data.
+
+    Phonon frequencies are extracted from 'band.yaml' with the file named 'extract_frequency_data.py'
     
     to see phonon dispersion curve:  "phonopy -p band.conf"
     
