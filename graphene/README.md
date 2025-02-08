@@ -16,7 +16,7 @@
 7. Write "phonopy --lammps -f forces_POSCAR-*.dump" on terminal.
     (generated filename: FORCE_SETS)      Q: SHOULD I CONVERT FORCE_SETS FILE TO ANOTHER FORMAT?
 
-8. Write "phonopy -c POSCAR" on terminal to create phonon.yaml
+8. Write "phonopy -c POSCAR --dim 4 2 1" on terminal to create phonon.yaml
    (generated filename: phonon.yaml)
    
 9. Write 'phonopy --band="0 0 0  0.5 0 0  1/3 1/3 0  0 0 0" -c phonopy_disp.yaml'on terminal to generate 'band.yaml'
