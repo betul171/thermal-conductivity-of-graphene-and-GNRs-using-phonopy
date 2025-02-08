@@ -15,15 +15,12 @@
 
 7. Write "phonopy --lammps -f forces_POSCAR-*.dump" on terminal.
     (generated filename: FORCE_SETS)      Q: SHOULD I CONVERT FORCE_SETS FILE TO ANOTHER FORMAT?
-
-8. Write "phonopy -c POSCAR --dim 4 2 1" on terminal to create phonon.yaml
-   (generated filename: phonon.yaml)
    
-9. Write 'phonopy --band="0 0 0  0.5 0 0  1/3 1/3 0  0 0 0" -c phonopy_disp.yaml' OR 'phonopy --band="0 0 0  0.5 0 0  1/3 1/3 0  0 0 0"' on terminal to generate 'band.yaml'
-    (generated filename: band.yaml)
+8. Write 'phonopy --band="0 0 0  0.5 0 0  1/3 1/3 0  0 0 0" -c phonopy_disp.yaml' OR 'phonopy --band="0 0 0  0.5 0 0  1/3 1/3 0  0 0 0"' on terminal to generate 'band.yaml'
+    (generated filename: band.yaml, phonon.yml)
 
-10. An alternative to 9: Create a file named band.conf. Then write "phonopy --band -c phonopy_disp.yaml -d band.conf" on terminal.
+9. An alternative to 9: Create a file named band.conf. Then write "phonopy --band -c phonopy_disp.yaml -d band.conf" on terminal.
 
-11. Analize the data.
+10. Analize the data.
     "phonopy -p band.conf"  --> to see frequency-wavevector graph
 
