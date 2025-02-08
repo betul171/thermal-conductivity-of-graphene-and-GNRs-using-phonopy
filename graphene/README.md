@@ -14,7 +14,7 @@
      (main filename: extract_forces.py; used filenames: POSCAR-001.dat, POSCAR-002.dat; generated filenames: forces_POSCAR-001.dump, forces_POSCAR-002.dump)
 
 7. Write "phonopy --lammps -f forces_POSCAR-*.dump" on terminal.
-    (generated filename: FORCE_SETS)      Q: SHOULD I CONVERT FORCE_SETS FILE TO ANOTHER FORMAT?
+    (generated filename: FORCE_SETS)  
    
 8. Write 'phonopy --band="0 0 0  0.5 0 0  1/3 1/3 0  0 0 0" -c phonopy_disp.yaml' OR 'phonopy --band="0 0 0  0.5 0 0  1/3 1/3 0  0 0 0"' on terminal to generate 'band.yaml'
     (generated filename: band.yaml, phonon.yml)
