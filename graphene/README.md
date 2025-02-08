@@ -23,10 +23,10 @@
 
 10. Analize the data.
     
-    to see phonon dispersion curve: "phonopy -p band.conf"
+    to see phonon dispersion curve:  "phonopy -p band.conf"
     
-    If you want phonon frequencies at a specific q-point: phonopy --qpoints="0 0 0"
+    If you want phonon frequencies at a specific q-point:  phonopy --qpoints="0 0 0"
     
-    If you have multiple q-points, create a file qpoints.conf, and use: phonopy --qpoints qpoints.conf
+    If you have multiple q-points, create a file qpoints.conf, and use:  phonopy --qpoints qpoints.conf
     
 
