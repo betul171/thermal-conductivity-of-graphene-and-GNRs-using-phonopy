@@ -1,4 +1,4 @@
-### The aim of this directory is to calculate phonon frequencies of a graphene piece containing 4 atoms.
+### The aim of this directory is to calculate phonon frequencies of a graphene piece containing 4 atoms using phonopy and LAMMPS.
 
 1. Create a lammps script to generate a lammps data file.
    
