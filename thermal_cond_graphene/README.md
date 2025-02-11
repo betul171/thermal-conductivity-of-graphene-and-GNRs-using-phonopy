@@ -18,4 +18,4 @@
 
 5. Create a lammps script to extract forces.
 
-(main filename: auto_extract_forces.py; used filenames: POSCAR-*.dat , generated filenames: forces_POSCAR-*.dump)
+(main filename: auto_extract_forces.py; used filenames: POSCAR-*.dat , generated filenames: forces_POSCAR- *.dump)
