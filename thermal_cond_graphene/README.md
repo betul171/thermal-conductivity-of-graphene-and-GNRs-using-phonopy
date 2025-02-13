@@ -23,9 +23,13 @@
 
 ################################# new try ##########################################
 phono3py -d --dim 1 1 1 --dim-fc2 1 1 1 --pa auto -c POSCAR-unitcell
+
 extract forces as usual
+
 phonopy -c POSCAR-unitcell -d --dim 1 1 1 etc. with phonopy create FORCE_SETS file in another directory.
+
 move FORCE_SETS file to current directory
+
 phono3py --fs2f2 creates FORCES_FC2
 
 
