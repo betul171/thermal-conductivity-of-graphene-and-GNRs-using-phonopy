@@ -1,3 +1,6 @@
+# Create force data with LAMMPS.
+# There is no need to run dynamics. We are only interested to create force data files.
+## Since we are performing finite displacement calculations (which Phono3py uses), we want forces from slightly displaced configurations, not a fully minimized one.
 import os
 from lammps import lammps
 
