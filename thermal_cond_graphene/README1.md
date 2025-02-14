@@ -9,4 +9,11 @@
 3. Write "phono3py -d --dim 2 2 2 --dim-fc2 4 4 4 --pa auto -c POSCAR-unitcell" on terminal.
    (generated filenames: phono3py_disp.yaml, POSCAR-00001...POSCAR-00372)
 
+4. Create python script that converts POSCAR file to lammps data file.
+
+(main filename: auto_poscar2lammps.py, generated filenames: POSCAR-*.dat)
+
+5. Create a lammps script to extract forces.
+(main filename: auto_extract_forces.py; used filenames: POSCAR-*.dat , generated filenames: forces_POSCAR- *.dump)
+
    
