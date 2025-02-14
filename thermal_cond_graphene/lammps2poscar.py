@@ -4,4 +4,4 @@ from ase.io import read, write
 atoms = read("graphene.dat", format="lammps-data")
 
 # Write to POSCAR_old format
-write("POSCAR_old", atoms, format="vasp")
+write("POSCAR-unitcell", atoms, format="vasp")
