@@ -1,5 +1,5 @@
 # Create force data with LAMMPS.
-# There is no need to run dynamics. We are only interested to create force data files.
+# There is no need to run dynamics. We are only interested to create the initial configuration data file.
 ### NOTE: Since I want to get only the initial configuration, I do not minimize the system.
 
 from lammps import lammps
