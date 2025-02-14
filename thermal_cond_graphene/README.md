@@ -32,5 +32,6 @@ move FORCE_SETS file to current directory
 
 phono3py --fs2f2 creates FORCES_FC2
 
+phono3py --cf3-file file_list.dat creates FORCES_FC3 maybe this should be the first thing to do.
 
 
