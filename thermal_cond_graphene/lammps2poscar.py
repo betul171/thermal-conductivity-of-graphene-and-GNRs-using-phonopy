@@ -1,7 +1,8 @@
 from ase.io import read, write
 
-# Read the LAMMPS data file
+
 atoms = read("graphene.dat", format="lammps-data")
 
-# Write to POSCAR_old format
+atoms.center(axis=2) ### Center in z-direction to avoid interactions in z-direction.
+
 write("POSCAR-unitcell", atoms, format="vasp")
