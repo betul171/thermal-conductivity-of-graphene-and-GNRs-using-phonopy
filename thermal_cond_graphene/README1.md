@@ -6,7 +6,7 @@
 
 (main filename: lammps2poscar.py, generated filename: POSCAR-unitcell)
 
-3. Write "phono3py -d --dim 2 2 2 --dim-fc2 4 4 4 --pa auto -c POSCAR-unitcell" on terminal.
+3. Write "phono3py -d --dim 2 2 1 --dim-fc2 4 4 1 --pa auto -c POSCAR-unitcell" on terminal.
    
    (generated filenames: phono3py_disp.yaml, POSCAR-00001...POSCAR-00372)
 
