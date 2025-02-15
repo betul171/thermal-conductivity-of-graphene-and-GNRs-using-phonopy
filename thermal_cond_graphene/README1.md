@@ -12,7 +12,7 @@
 
 4. Add "calculator: lammps" after "phono3py:" in phono3py_disp.yaml
 
-First two lines of phono3py_disp.yaml is must be as below.
+   First two lines of phono3py_disp.yaml is must be as below.
 
 
             
