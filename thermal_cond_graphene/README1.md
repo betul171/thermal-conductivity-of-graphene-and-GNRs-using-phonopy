@@ -35,9 +35,14 @@ First two lines of phono3py_disp.yaml is must be as below.
    
    (main filename: generate_file_list.py, generated filename: file_list.dat)
 
-8. To create FORCES_FC3 write "phono3py --cf3-file file_list.dat"on terminal.
+8. To create 'FORCES_FC3' file, write "phono3py --cf3-file file_list.dat" on terminal.
    
    (generated filename: FORCES_FC3)
+
+9. To create 'FORCE_SETS' file, write "phono3py --cfs" on terminal.
+
+    (generated filename: FORCE_SETS)
+    
    
 
 
