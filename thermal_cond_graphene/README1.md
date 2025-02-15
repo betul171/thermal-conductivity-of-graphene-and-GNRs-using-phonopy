@@ -14,14 +14,14 @@
 
 Example first lines of phono3py_disp.yaml is below.
 
-"""
-      
+
+            
      phono3py:
    
         calculator: lammps
   
   
-"""
+
 
 5. Create python script that converts POSCAR file to lammps data file.
 
@@ -30,5 +30,7 @@ Example first lines of phono3py_disp.yaml is below.
 6. Create a lammps script to extract forces.
    
 (main filename: auto_extract_forces.py; used filenames: POSCAR-*.dat , generated filenames: forces_POSCAR- *.dump)
+
+   f
 
    
