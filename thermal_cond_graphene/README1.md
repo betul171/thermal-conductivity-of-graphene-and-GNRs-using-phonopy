@@ -12,7 +12,7 @@
 
 4. Add "calculator: lammps" after "phono3py:" in phono3py_disp.yaml
 
-Example first lines of phono3py_disp.yaml is below.
+First two lines of phono3py_disp.yaml is must be as below.
 
 
             
@@ -31,6 +31,5 @@ Example first lines of phono3py_disp.yaml is below.
    
 (main filename: auto_extract_forces.py; used filenames: POSCAR-*.dat , generated filenames: forces_POSCAR- *.dump)
 
-   f
 
    
