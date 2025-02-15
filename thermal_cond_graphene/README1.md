@@ -8,7 +8,7 @@
 
 3. Write "phono3py -d --dim 2 2 1 --dim-fc2 4 4 1 --pa auto -c POSCAR-unitcell" on terminal.
    
-   (generated filenames: phono3py_disp.yaml, POSCAR-00001...POSCAR-00372)
+   (generated filenames: phono3py_disp.yaml, POSCAR-00001...POSCAR-00188)
 
 4. Add "calculator: lammps" after "phono3py:" in phono3py_disp.yaml
 
