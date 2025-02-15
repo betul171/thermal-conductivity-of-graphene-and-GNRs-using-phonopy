@@ -16,8 +16,10 @@ Example first lines of phono3py_disp.yaml is below.
 
 """
 
-phono3py:
 
+      
+   phono3py:
+   
      calculator: lammps
   
      version: "3.12.1"
