@@ -13,6 +13,7 @@
 4. Add "calculator: lammps" after "phono3py:" in phono3py_disp.yaml
 
 Example first lines of phono3py_disp.yaml is below.
+
 """
 phono3py:
   calculator: lammps
