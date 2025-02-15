@@ -1,37 +1,59 @@
 ## The aim of this directory is to calculate thermal conductivity of graphene piece containing 4 atoms using phono3py and LAMMPS.
 
 1. Create a lammps script to generate a lammps data file.
-   
-   (main filename: create_lammps_data.py, generated filename: graphene.dat) SLANTED??
-   
+
+(main filename: create_lammps_data.py, generated filename: graphene.dat) SLANTED??
+
 2. Convert 'graphene.dat' to POSCAR format using a python script.
 
-   (main filename: lammps2poscar.py, generated filename: POSCAR)
+(main filename: lammps2poscar.py, generated filename: POSCAR-unitcell)
 
-3. Write 'phono3py --dim="4 2 1" -d --amplitude=0.01' on terminal to create displaced POSCAR files.
+3. Write "phono3py -d --dim 2 2 1 --dim-fc2 4 4 1 --pa auto -c POSCAR-unitcell" on terminal.
+   
+   (generated filenames: phono3py_disp.yaml, POSCAR-00001...POSCAR-00188)
 
-   (generated filenames:POSCAR-* <POSCAR-0001, POSCAR-0002, etc.>, phono3py_disp.yaml)
+4. Add "calculator: lammps" after "phono3py:" in phono3py_disp.yaml
 
-4. Create python script that converts POSCAR file to lammps data file.
+First two lines of phono3py_disp.yaml is must be as below.
 
-(main filename: auto_poscar2lammps.py, generated filenames: POSCAR-*.dat).
 
-5. Create a lammps script to extract forces.
+            
+     phono3py:
+   
+        calculator: lammps
+  
+  
 
+
+5. Create python script that converts POSCAR file to lammps data file.
+
+(main filename: auto_poscar2lammps.py, generated filenames: POSCAR-*.dat)
+
+6. Create a lammps script to extract forces.
+   
 (main filename: auto_extract_forces.py; used filenames: POSCAR-*.dat , generated filenames: forces_POSCAR- *.dump)
 
+7. Create a python script that writes all 'forces_POSCAR-*.dump' filenames in a file.
+   
+   (main filename: generate_file_list.py, generated filename: file_list.dat)
 
-################################# new try ##########################################
-phono3py -d --dim 1 1 1 --dim-fc2 1 1 1 --pa auto -c POSCAR-unitcell
+8. To create 'FORCES_FC3' file, write "phono3py --cf3-file file_list.dat" on terminal.
+   
+   (generated filename: FORCES_FC3)
 
-extract forces as usual
+9. To create 'FORCE_SETS' file, write "phono3py --cfs" on terminal.
+   
+    (this command creates FORCE_SETS from FORCES_FC3)
 
-phonopy -c POSCAR-unitcell -d --dim 1 1 1 etc. with phonopy create FORCE_SETS file in another directory.
+    (generated filename: FORCE_SETS)
 
-move FORCE_SETS file to current directory
+10. To create 'FORCES_FC2' file, write "phono3py --fs2f2" on terminal.
+ 
+     (this command creates FORCES_FC2 from FORCE_SETS)
 
-phono3py --fs2f2 creates FORCES_FC2
+    (generated filename: FORCES_FC2)
+    
+   
 
-phono3py --cf3-file file_list.dat creates FORCES_FC3 maybe this should be the first thing to do.
 
-
+   
