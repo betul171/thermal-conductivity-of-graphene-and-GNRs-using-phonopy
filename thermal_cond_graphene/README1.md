@@ -18,9 +18,9 @@ Example first lines of phono3py_disp.yaml is below.
 
 phono3py:
 
-  calculator: lammps
+     calculator: lammps
   
-  version: "3.12.1"
+     version: "3.12.1"
   
 """
 
