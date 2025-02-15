@@ -31,5 +31,14 @@ First two lines of phono3py_disp.yaml is must be as below.
    
 (main filename: auto_extract_forces.py; used filenames: POSCAR-*.dat , generated filenames: forces_POSCAR- *.dump)
 
+7. Create a python script that writes all 'forces_POSCAR-*.dump' filenames in a file.
+   
+   (main filename: generate_file_list.py, generated filename: file_list.dat)
+
+8. To create FORCES_FC3 write "phono3py --cf3-file file_list.dat"on terminal.
+   
+   (generated filename: FORCES_FC3)
+   
+
 
    
