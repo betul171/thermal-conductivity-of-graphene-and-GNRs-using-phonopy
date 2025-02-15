@@ -15,9 +15,13 @@
 Example first lines of phono3py_disp.yaml is below.
 
 """
+
 phono3py:
+
   calculator: lammps
+  
   version: "3.12.1"
+  
 """
 
 5. Create python script that converts POSCAR file to lammps data file.
