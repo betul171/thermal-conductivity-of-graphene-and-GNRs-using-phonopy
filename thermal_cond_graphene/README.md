@@ -43,17 +43,34 @@ First two lines of phono3py_disp.yaml is must be as below.
    
    (generated filename: FORCES_FC3)
 
-9. To create 'FORCE_SETS' file, write "phono3py --cfs" on terminal.
+9. To create 'FORCE_SETS' file, write "phono3py --cfs" on terminal. (You do not need this item to calculate thermal conductivity)
    
     (this command creates FORCE_SETS from FORCES_FC3)
 
     (generated filename: FORCE_SETS)
 
-10. To create 'FORCES_FC2' file, write "phono3py --fs2f2" on terminal.
+10. To create 'FORCES_FC2' file, write "phono3py --fs2f2" on terminal. (You do not need this item to calculate thermal conductivity)
  
      (this command creates FORCES_FC2 from FORCE_SETS)
 
     (generated filename: FORCES_FC2)
+
+11. To create fc3.hdf5 and fc2.hdf5, write "phono3py-load"on terminal.
+   (generated filenames: fc3.hdf5, fc2.hdf5)
+
+12. Using 11x11x11 sampling mesh, lattice thermal conductivity is calculated by writing
+    "phono3py-load --mesh 11 11 11 --br" on the terminal.
+
+    (generated filename: kappa-m111111.hdf5)
+
+13. Accumulated lattice thermal conductivity is calculated using phono3py-kaccum script.
+     To calculate accumulated lattice thermal conductivity write "phono3py-kaccum kappa-m111111.hdf5 |tee               kaccum.dat" on terminal.
+
+14. kaccum.dat is plotted using gnuplot by
+    
+    gnuplot> p 'kaccum.dat' i 30 u 1:2 w l, 'kaccum.dat' i 30 u 1:8 w l
+
+    
     
    
 
