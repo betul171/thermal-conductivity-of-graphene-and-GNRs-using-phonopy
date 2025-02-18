@@ -1,4 +1,5 @@
 # Plot accumulated thermal conductivity.
+# This code is not mine and generated  by ChatGPT.
 
 import numpy as np
 import matplotlib.pyplot as plt
