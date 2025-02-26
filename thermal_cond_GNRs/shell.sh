@@ -1,5 +1,7 @@
 #!/bin/zsh
 
+### I am trying to find a way to stop excessive memory usage.
+
 # Function to count the number of POSCAR files
 count_poscars() {
     ls POSCAR-* 2>/dev/null | wc -l
