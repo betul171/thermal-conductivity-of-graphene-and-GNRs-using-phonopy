@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/zsh
 
 # Step 1: Generate the LAMMPS data file using create_lammps_data.py
 echo "Step 1: Generating LAMMPS data file..."
